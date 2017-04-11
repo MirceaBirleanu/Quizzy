@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#89A692</item>
+        <item name="colorPrimaryDark">#00796b</item>
+        <item name="colorAccent">#004d40</item>
+        <item name="android:navigationBarColor">?attr/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">#004d40</item>
+        <item name="android:textColorSecondary">@android:color/background_dark</item>
+
+    </style>
+</resources>
