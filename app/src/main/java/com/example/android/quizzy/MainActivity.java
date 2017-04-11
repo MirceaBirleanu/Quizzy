@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Activity mActivity;
 
+    //code for restarting the activity after user answered the questions
     public static void restartActivity(Activity activity) {
         activity.recreate();
     }
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button button = (Button) findViewById(R.id.restart_button);
         button.setOnClickListener(new View.OnClickListener() {
+            //            resetting the checkboxes to initial value false when restarting
             @Override
             public void onClick(View v) {
                 restartActivity(mActivity);
@@ -84,6 +86,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //    code for getting the status of each checkbox on submit answer
+//    code for validating the correct answer on each question
     public String submitAnswers(View view) {
 
         CheckBox q1CheckBox1 = (CheckBox) findViewById(R.id.firstAnswerQ1);
@@ -147,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
+    //code for displaying the summary touser depending on the number of correct answers
     private String createSummary(int results, String yourName) {
         if (results > 7) {
             Context context = getApplicationContext();
@@ -179,6 +183,7 @@ public class MainActivity extends AppCompatActivity {
         return quizMessage;
     }
 
+    //calculates the total number of correct answers
     private int calculateResults(boolean q1CorrectAnswer, boolean q2CorrectAnswer, boolean q3CorrectAnswer, boolean q4CorrectAnswer, boolean q5CorrectAnswer, boolean q6CorrectAnswer, boolean q7CorrectAnswer, boolean q8CorrectAnswer, boolean q9CorrectAnswer, boolean q10CorrectAnswer) {
         int correctAnswers = 0;
         if (q1CorrectAnswer) {

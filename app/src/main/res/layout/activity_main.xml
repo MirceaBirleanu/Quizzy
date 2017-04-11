@@ -3,8 +3,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
     tools:context="com.example.android.quizzy.MainActivity"
 
@@ -12,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:background="@mipmap/europaedp">
+        android:background="@mipmap/globe_portrait">
 
 
         <LinearLayout
@@ -43,8 +42,8 @@
                 android:id="@+id/user_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="16dp"
                 android:layout_marginBottom="24dp"
-                android:layout_marginLeft="16dp"
                 android:hint="Insert your name here"
                 android:inputType="textCapWords|textPersonName"
                 android:textColor="#000000"
